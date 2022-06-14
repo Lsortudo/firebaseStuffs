@@ -96,16 +96,18 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvWarningPassword" />
+
             <TextView
+                android:id="@+id/tvDontHaveAccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="doesn't have an account?"
-                app:layout_constraintTop_toBottomOf="@id/btSignin"
+                android:gravity="center"
+                android:text="Doesn't have an account?\n  click here"
+                android:textSize="16sp"
+                android:textStyle="italic|bold"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                android:textSize="16sp"
-                android:textStyle="italic"
-                android:id="@+id/tvDontHaveAccount"/>
+                app:layout_constraintTop_toBottomOf="@id/btSignin" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

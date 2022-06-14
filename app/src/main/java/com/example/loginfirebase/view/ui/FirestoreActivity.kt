@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.loginfirebase.R
 
-class DatabaseActivity : AppCompatActivity() {
+class FirestoreActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_database)
+        setContentView(R.layout.activity_firestore)
     }
 }

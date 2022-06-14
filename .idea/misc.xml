@@ -5,9 +5,11 @@
       <map>
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LoginFirebase/app/src/main/res/drawable/mainbackground.xml" value="0.235" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LoginFirebase/app/src/main/res/drawable/roundbutton.xml" value="0.246" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LoginFirebase/app/src/main/res/layout/activity_database.xml" value="0.25" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LoginFirebase/app/src/main/res/layout/activity_firestore.xml" value="0.25" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/LoginFirebase/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/LoginFirebase/app/src/main/res/layout/activity_signin.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/Asus/AndroidStudioProjects/LoginFirebase/app/src/main/res/layout/activity_signup.xml" value="0.33" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LoginFirebase/app/src/main/res/layout/activity_signin.xml" value="0.25" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/LoginFirebase/app/src/main/res/layout/activity_signup.xml" value="0.25" />
       </map>
     </option>
   </component>

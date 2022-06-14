@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginFirebase">
         <activity
-            android:name=".view.ui.DatabaseActivity"
+            android:name=".view.ui.FirestoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ui.NavigationActivity"
             android:exported="false" />
         <activity
             android:name=".view.ui.SignupActivity"

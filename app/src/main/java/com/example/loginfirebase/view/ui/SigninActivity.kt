@@ -5,14 +5,9 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.loginfirebase.R
 import com.example.loginfirebase.databinding.ActivitySigninBinding
 import com.google.android.material.snackbar.Snackbar
-import com.google.firebase.FirebaseNetworkException
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
-import com.google.firebase.auth.FirebaseAuthUserCollisionException
-import com.google.firebase.auth.FirebaseAuthWeakPasswordException
 
 class SigninActivity : AppCompatActivity() {
 
@@ -67,8 +62,17 @@ class SigninActivity : AppCompatActivity() {
     }
 
     private fun intentToDatabase() {
-        val intent = Intent(this, DatabaseActivity::class.java)
+        val intent = Intent(this, NavigationActivity::class.java)
         startActivity(intent)
         finish()
+    }
+
+    override fun onStart() {
+        super.onStart()
+        val userLogged = FirebaseAuth.getInstance().currentUser
+
+        if (userLogged != null) {
+            intentToDatabase()
+        }
     }
 }
