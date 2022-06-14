@@ -1,5 +1,6 @@
 package com.example.loginfirebase.view.ui
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -59,6 +60,11 @@ class SignupActivity : AppCompatActivity() {
 
                 }
             }
+        }
+        binding.tvDontHaveAccount.setOnClickListener {
+            val intent = Intent(this, SignupActivity::class.java)
+            startActivity(intent)
+            finish()
         }
 
     }

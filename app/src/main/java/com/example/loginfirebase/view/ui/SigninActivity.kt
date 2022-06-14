@@ -54,8 +54,8 @@ class SigninActivity : AppCompatActivity() {
             }
         }
 
-        binding.tvDontHaveAccount.setOnClickListener {
-            val intent = Intent(this, SignupActivity::class.java)
+        binding.tvHaveAccount.setOnClickListener {
+            val intent = Intent(this, SigninActivity::class.java)
             startActivity(intent)
             finish()
         }

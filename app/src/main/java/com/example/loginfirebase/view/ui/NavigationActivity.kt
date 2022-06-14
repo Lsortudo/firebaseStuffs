@@ -22,6 +22,11 @@ class NavigationActivity : AppCompatActivity() {
         binding = ActivityDatabaseBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btDatabase.setOnClickListener {
+            val intent = Intent(this, FirestoreActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
 
         binding.btOffline.setOnClickListener {
